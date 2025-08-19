@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Gupta - Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Resume Specific Styles */
+        body.resume-page {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #fff;
+            color: #333;
+        }
+        
+        .resume-header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        .resume-header h1 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .resume-header p {
+            color: #666;
+            margin: 0.3rem 0;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+        
+        .resume-section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .resume-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .resume-item h3 {
+            margin: 0.5rem 0;
+            color: #444;
+        }
+        
+        .resume-item .date {
+            color: #666;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-tag {
+            background: #f0f0f0;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+        
+        @media print {
+            @page {
+                margin: 25px;
+                size: auto;
+            }
+            
+            body {
+                padding: 20px;
+                font-size: 12px;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            
+            .no-print {
+                display: none;
+            }
+            
+            .print-only {
+                display: none;
+            }
+            
+            .print-only {
+                display: block;
+                margin-top: 2rem;
+                padding-top: 1rem;
+                border-top: 1px solid #eee;
+                text-align: center;
+                font-size: 0.9em;
+                color: #666;
+            }
+            
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
+    </style>
+</head>
+<body class="resume-page">
+    <div class="container">
+        <div class="resume-header">
+            <h1>Shivam Gupta</h1>
+            <p>Jr. Developer | B.Sc. IT Graduate | Python Enthusiast</p>
+            <div class="contact-info">
+                <a href="tel:+918108383003"><i class="fas fa-phone"></i> +91 81083 83003</a>
+                <a href="mailto:shivamg8355@gmail.com"><i class="fas fa-envelope"></i> shivamg8355@gmail.com</a>
+                <a href="https://github.com/shivamg108" target="_blank"><i class="fab fa-github"></i> shivamg108</a>
+                <a href="https://www.linkedin.com/in/shivam-gupta-35264a30b" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://shivamg108.github.io/portfolio-shivam/" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
+            </div>
+        </div>
+        
+        <div class="resume-section">
+            <h2>Professional Summary</h2>
+            <p>Detail-oriented Junior Developer with a B.Sc. in Information Technology, specializing in Python development. Passionate about building efficient applications and continuously expanding technical expertise. Strong foundation in web development, database management, and problem-solving.</p>
+        </div>
+        
+        <div class="resume-section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">Flask</div>
+                <div class="skill-tag">Django</div>
+                <div class="skill-tag">HTML5/CSS3</div>
+                <div class="skill-tag">JavaScript</div>
+                <div class="skill-tag">Bootstrap</div>
+                <div class="skill-tag">SQL</div>
+                <div class="skill-tag">PostgreSQL</div>
+                <div class="skill-tag">Git/GitHub</div>
+                <div class="skill-tag">PyQt5</div>
+            </div>
+        </div>
+        
+        <div class="resume-section">
+            <h2>Work Experience</h2>
+            
+            <div class="resume-item">
+                <h3>AU Finja Jewels</h3>
+                <div class="date">2025 - Present</div>
+                <p><strong>Junior Developer</strong></p>
+                <ul>
+                    <li>Independently developing and maintaining software solutions for jewelry business operations</li>
+                    <li>Designing and implementing features to streamline business processes</li>
+                    <li>Managing the full software development lifecycle from requirements to deployment</li>
+                    <li>Ensuring software quality through testing and optimization</li>
+                </ul>
+            </div>
+            
+            <div class="resume-item">
+                <h3>Reliance Jio</h3>
+                <div class="date">2023 - 2024</div>
+                <p><strong>Field Sales Executive (FSE)</strong></p>
+                <ul>
+                    <li>Managed sales operations and customer relationships in the field</li>
+                    <li>Achieved sales targets and expanded customer base</li>
+                    <li>Provided product demonstrations and technical support to clients</li>
+                </ul>
+
+                <div class="date" style="margin-top: 1rem;">2022 (2 months)</div>
+                <p><strong>Home Sales Officer (HSO)</strong></p>
+                <ul>
+                    <li>Managed direct sales and customer acquisition</li>
+                    <li>Conducted home visits and product demonstrations</li>
+                    <li>Built and maintained strong customer relationships</li>
+                </ul>
+                
+                <div class="date" style="margin-top: 1rem;">2020 - 2021</div>
+                <p><strong>Experience Design & Sales Specialist (XDSS)</strong></p>
+                <ul>
+                    <li>Designed and implemented customer experience strategies</li>
+                    <li>Conducted market research and analyzed customer feedback</li>
+                    <li>Developed sales presentations and product demonstrations</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="resume-section">
+            <h2>Projects</h2>
+            
+            <div class="resume-item">
+                <h3>Image Store and Rename (Manage Products Windows Application)</h3>
+                <div class="date">2025</div>
+                <ul>
+                    <li>Developed a Windows application to manage product images with automated renaming and unique ID generation</li>
+                    <li>Implemented a user-friendly interface using PyQt5 for product management</li>
+                    <li>Created a search functionality for products by name or ID on the customer side</li>
+                    <li>Technologies: Python, PyQt5, PostgreSQL, HTML/CSS/JS, Bootstrap</li>
+                </ul>
+            </div>
+            
+            <div class="resume-item">
+                <h3>HRMS (Human Resource Management System)</h3>
+                <div class="date">2024-2025</div>
+                <ul>
+                    <li>Developed a comprehensive HR management system to streamline HR processes</li>
+                    <li>Implemented employee management and organizational workflow features</li>
+                    <li>Created an intuitive user interface with role-based access control</li>
+                    <li>Technologies: Python, Flask, SQLite, HTML/CSS/JS, Bootstrap</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="resume-section">
+            <h2>Education</h2>
+            <div class="resume-item">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <div class="date">2022 - 2025</div>
+                <p>Mumbai University (Chandrabhan Sharma College, Powai)</p>
+            </div>
+            <div class="resume-item">
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <div class="date">2020</div>
+                <p>Maharashtra State Board (Vidya Niketan College, Ghatkopar)</p>
+            </div>
+            <div class="resume-item">
+                <h3>Secondary School Certificate (SSC)</h3>
+                <div class="date">2018</div>
+                <p>Maharashtra State Board (VPS School, Vikhroli)</p>
+            </div>
+        </div>
+                
+        <div class="print-only" style="text-align: left; margin-top: 1rem; font-size: 1.1em;">
+            <p><strong>My portfolio:</strong> <a href="https://shivamg108.github.io/portfolio-shivam/" style="color: #2563eb; font-weight: bold; text-decoration: none;">shivamg108.github.io/shivam-portfolio/</a></p>
+        </div>
+        
+        <div class="declaration" style="margin: 3rem 0; padding: 1.5rem; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb;">
+            <h3 style="color: #1f2937; margin-bottom: 1rem;">Declaration</h3>
+            <p style="margin: 0; line-height: 1.6; color: #4b5563;">
+                I hereby declare that the information provided in this resume is true to the best of my knowledge and belief. I understand that any willful misrepresentation may lead to my disqualification from the recruitment process or termination of employment if discovered at a later date.
+            </p>
+            <div style="margin-top: 2rem; display: flex; justify-content: space-between; align-items: center;">
+                <div style="width: 200px; border-top: 1px solid #9ca3af; padding-top: 0.5rem;">
+                    <p style="margin: 0; font-weight: 500;">Place: Mumbai</p>
+                </div>
+                <div style="width: 200px; text-align: right; border-top: 1px solid #9ca3af; padding-top: 0.5rem;">
+                    <p style="margin: 0; font-weight: 500;">Shivam Gupta</p>
+                </div>
+            </div>
+        </div>
+        <div class="thank-you" style="text-align: center; margin: 2rem 0; padding: 1.5rem; background-color: #f8f9fa; border-radius: 8px; font-style: italic;">
+            <p style="margin: 0; font-size: 1.1em; color: #4b5563;">
+                Thank you for considering my application. I look forward to the opportunity to contribute to your team.
+            </p>
+        </div>
+        <div class="no-print" style="text-align: center; margin: 2rem 0;">
+            <a href="#" onclick="window.print()" class="btn">
+                <i class="fas fa-print"></i> Print Resume
+            </a>
+        </div>
+
+    </div>
+    
+    <script>
+        // Add print functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Remove print button after printing
+            window.onafterprint = function() {
+                // Optional: Add any post-print actions here
+            };
+        });
+    </script>
+</body>
+</html>
