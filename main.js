@@ -1,5 +1,14 @@
-// Project data
 const projects = [
+    {
+        title: "HRMS (Company Project)",
+        description: "A comprehensive HR management system developed as a commercial project to streamline HR processes, employee management, and organizational workflows. \
+        Implemented employee management, attendance tracking, and performance evaluation features. \
+        Created an intuitive user interface with role-based access control.",
+        technologies: ["Python ","React ", "MUI", "PostgreSQL"],
+        image: "https://via.placeholder.com/600x400?text=HRMS+Project",
+        github: "#",
+        demo: "#"
+    },
     {
 
         title: "Image Store and Rename (Manangae Products Windows Application)",
@@ -19,7 +28,6 @@ const projects = [
     }
 ];
 
-// DOM Elements
 const projectsContainer = document.querySelector('.projects-grid');
 const yearElement = document.getElementById('year');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -27,25 +35,21 @@ const sections = document.querySelectorAll('section');
 const menuBtn = document.querySelector('.menu-btn');
 const navLinksContainer = document.querySelector('.nav-links');
 
-// Mobile Menu Toggle
 function toggleMenu() {
     menuBtn.classList.toggle('open');
     navLinksContainer.classList.toggle('active');
     document.body.classList.toggle('no-scroll');
 }
 
-// Close menu when clicking on a nav link
 function closeMenu() {
     menuBtn.classList.remove('open');
     navLinksContainer.classList.remove('active');
     document.body.classList.remove('no-scroll');
 }
 
-// Set current year in footer
 const currentYear = new Date().getFullYear();
 yearElement.textContent = currentYear;
 
-// Render projects
 function renderProjects() {
     projectsContainer.innerHTML = projects.map(project => `
         <div class="project-card fade-in">
@@ -65,31 +69,25 @@ function renderProjects() {
     `).join('');
 }
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
         if (targetId === '#') return;
-        
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
             window.scrollTo({
                 top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
-            
-            // Update active link
             navLinks.forEach(link => link.classList.remove('active'));
             this.classList.add('active');
         }
     });
 });
 
-// Highlight active section in navigation
 function highlightActiveSection() {
     const scrollPosition = window.scrollY + 100;
-    
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
@@ -104,29 +102,21 @@ function highlightActiveSection() {
     });
 }
 
-// Form submission
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        
-        // Get form data
         const formData = new FormData(this);
         const formObject = {};
         formData.forEach((value, key) => {
             formObject[key] = value;
         });
-        
-        // Here you would typically send the form data to a server
         console.log('Form submitted:', formObject);
-        
-        // Show success message
-        alert('Thank you for your message! I will get back to you soon.');
+        alert('this section is under maintenance. Please contact me via email directly.');
         this.reset();
     });
 }
 
-// Intersection Observer for fade-in animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -141,16 +131,12 @@ const observer = new IntersectionObserver((entries, observer) => {
     });
 }, observerOptions);
 
-// Observe all sections
 sections.forEach(section => {
     observer.observe(section);
 });
 
-// Initialize
 function init() {
     renderProjects();
-    
-    // Set initial active link
     if (window.location.hash) {
         const targetElement = document.querySelector(window.location.hash);
         if (targetElement) {
@@ -159,23 +145,14 @@ function init() {
     } else {
         document.querySelector('.nav-link[href="#home"]').classList.add('active');
     }
-    
-    // Add event listeners
     menuBtn.addEventListener('click', toggleMenu);
-    
-    // Close menu when clicking on a nav link
     navLinks.forEach(link => {
         link.addEventListener('click', closeMenu);
     });
-    
-    // Add scroll event listener
     window.addEventListener('scroll', highlightActiveSection);
-    
-    // Observe project cards
     document.querySelectorAll('.project-card').forEach(card => {
         observer.observe(card);
     });
 }
 
-// Run initialization when DOM is fully loaded
 document.addEventListener('DOMContentLoaded', init);
